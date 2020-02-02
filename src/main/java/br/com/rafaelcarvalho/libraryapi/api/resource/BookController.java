@@ -1,4 +1,4 @@
-package br.com.rafaelcarvalho.libraryapi.controller;
+package br.com.rafaelcarvalho.libraryapi.api.resource;
 
 import br.com.rafaelcarvalho.libraryapi.dto.BookDto;
 import br.com.rafaelcarvalho.libraryapi.model.entity.Book;
