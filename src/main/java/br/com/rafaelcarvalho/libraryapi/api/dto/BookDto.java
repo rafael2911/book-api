@@ -1,7 +1,9 @@
-package br.com.rafaelcarvalho.libraryapi.dto;
+package br.com.rafaelcarvalho.libraryapi.api.dto;
 
 import br.com.rafaelcarvalho.libraryapi.model.entity.Book;
 import lombok.*;
+
+import javax.validation.constraints.NotEmpty;
 
 @Getter
 @Setter
@@ -10,8 +12,14 @@ import lombok.*;
 @AllArgsConstructor
 public class BookDto {
     private Long id;
+
+    @NotEmpty
     private String title;
+
+    @NotEmpty
     private String author;
+
+    @NotEmpty
     private String isbn;
 
     public BookDto(Book entity) {
